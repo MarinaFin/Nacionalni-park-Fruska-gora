@@ -1,0 +1,324 @@
+body {
+	background-image: url("background.png");
+	font-family: Helvetica;
+}
+header {
+	background-color: white;
+}
+header, footer {
+	opacity: 0.8;
+}
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 20px;
+}
+.logo {
+	background-image: url("logo.png");
+	height: 170px;
+	width: 100px;
+	background-size: cover;
+}
+.nav-list {
+	list-style-type: none;
+}
+.nav-list li {
+	display: inline-block;
+	margin: 10px;
+}
+.nav-list li a {
+	text-decoration: none;
+	font-size: 1.3em;
+	color: black;
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+.nav-list li a:hover,
+.readmore:hover {
+	color: #3B3B3B;
+}
+.linktop {
+	color: #00725b;
+	font-weight: bold;
+	font-size: 1.1em;
+	text-align: center;
+}
+.linktop:hover {
+	color: #043d32;
+}
+footer {
+	height: 80px;
+	background-color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+footer div p {
+	color: #00725b;
+	font-weight: bold;
+}
+main {
+	margin: 0 20px;
+	min-height: 70vh;
+}
+main h1 {
+	text-align: center;
+	font-size: 3em;
+	color: #00725b;
+}
+.events {
+	display: flex;
+	flex-wrap: wrap;
+}
+.events .event-content {
+	width:33%;
+	margin-bottom: 30px;
+}
+.events .event-content img {
+	width: 95%;
+	height: auto;
+}
+.events. event-content p {
+	text-align: justify;
+	margin: 0 20px 0 0;
+}
+.events .event-content h3 {
+	color: #00725b;
+}
+.news {
+	margin-bottom: 30px;
+}
+.news .news-header {
+	height: 50px;
+	background-color: #00725b;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.news .news-content {
+	display: flex;
+	align-items: center;
+}
+.news .news-content img {
+	width: 30%;
+}
+.news .news-content div {
+	width: 70%;
+	padding-left: 30px;
+}
+
+@media (max-width: 490px) {
+	main h1 {
+		font-size: 2.5em;
+	}
+	.nav-list li {
+		display: block;
+	}
+	.nav-list li a {
+		font-size: 1.1em;
+	}
+}
+@media (max-width: 815px) {
+	.events .event-content {
+		width:100%;
+	}
+}
+.nature {
+	display: flex;
+	flex-wrap: wrap;
+}
+.nature .nature-content {
+	display: flex;
+	width:100%;
+	margin:10px
+}
+.nature .nature-content div {
+	width: 60%;
+	margin-left: 20px;
+}
+.nature div p {
+	text-align: justify;
+	margin-right: 20px;
+}
+.nature div h3 {
+	color: #00725b;
+}
+
+.nature .nature-content .img {
+	width: 300px;
+	height: 200px;
+	background-repeat: no-repeat;
+	background-position-x: -190px;
+}
+.nature .nature-content .plant {
+	 background-image: url("biljke.jpg");
+}
+.nature .nature-content .animal {
+	 background-image: url("zivotinje.jpg");
+}
+.nature .nature-content .mushroom {
+	 background-image: url("gljive.jpg");
+}
+.nature .nature-content .geo {
+	 background-image: url("geo.jpg");
+}
+.nature .nature-content .climate {
+	 background-image: url("klima.jpg");
+}
+@media (max-width: 1000px){
+	.nature .nature-content {
+		flex-wrap: wrap;
+		margin-bottom: 30px;
+	}
+	.nature .nature-content div {
+		margin: auto;
+		width: 100%;
+	}
+}
+.new-details-title {
+	text-align: center;
+	margin-bottom: 40px;
+	color: #00725b;
+}
+.news-description,
+.news-details {
+	width: 70%;
+	margin: auto;
+	background-color: white;
+	padding: 20px;
+	text-align: justify;
+	border-radius: 20px;
+	border: 1px solid black;
+}
+.contact {
+	display: flex;
+	justify-content: space-between;
+	width: 80%;
+	margin: auto;
+	flex-wrap: wrap;
+	gap: 30px;
+}
+.contact-us, .member {
+	  border: 1px solid black;
+	  background-color: white;
+	  border-radius: 20px;
+	  width: 45%;
+	  height: auto;
+	  text-align: center;
+}
+.contact-us, .member #member-inner-div {
+	text-align: left;
+	margin-left: 15px;
+}
+.contact-us h3,
+.contact-us h5,
+.member h5,
+.member h3 {
+	color: #00725b;
+}
+.contact-us label,
+.member label {
+	width: 100%;
+	display: inline-block;
+	margin: 20px 0 7px 0;
+}
+.contact-us form,
+.member form {
+	text-align: left;
+	margin-left: 15px;
+}
+.contact-us h3,
+.member h3 {
+	margin: 30px 10px 30px;
+}
+.contact-us input,
+.member input {
+	border-radius: 5px;
+	border: 1px solid black;
+}
+.contact-us #name,
+.contact-us #lastname,
+.contact-us #email,
+.member #name,
+.member #lastname,
+.member #email{
+	width: 80%;
+}
+.contact-us textarea,
+.member textarea {
+	border-radius: 10px;
+	border: 1px solid black;
+	min-height: 150px;
+	width: 85%;
+}
+.contact-us textarea:hover,
+.contact-us input:hover,
+.contact-us textarea:focus,
+.contact-us input:focus,
+.contact-us select:hover,
+.contact-us select:focus,
+.member textarea:hover,
+.member input:hover,
+.member textarea:focus,
+.member input:focus,
+.member select:hover,
+.member select:focus {
+	box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+.contact-us textarea:focus-visible,
+.contact-us input:focus-visible,
+.member textarea:focus-visible,
+.member input:focus-visible {
+	outline: none;
+}
+.contact-us select,
+.member select {
+	background-color: white;
+	border-radius: 5px;
+	padding: 3px;
+}
+.contact-us input[type="button"],
+.member input[type="button"],
+.contact-us button,
+.news-details button {
+	margin: 15px 0 15px;
+	padding: 5px;
+	background-color: #00725b;
+	color: white;
+}
+.contact-us input[type="button"]:hover,
+.member input[type="button"]:hover,
+.contact-us button:hover,
+.news-details button:hover {
+	box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+	background-color: white;
+	color: #00725b;
+}
+@media (max-width: 950px) {
+	.contact .contact-us,
+	.contact .member {
+		width: 100%;
+		margin: auto;
+	}
+}
+.member .radio-label,
+.member .checkbox-label {
+	display: inline;
+}
+.member input[type="checkbox"],
+.member input[type="radio"] {
+	accent-color: #00725b;
+}
+.checkbox-wrapper {
+	margin-top: 20px;
+}
+.gender-title {
+	margin-bottom: 9px;
+}
+p {
+	line-height:1.2em;
+}

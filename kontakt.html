@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style.css">
+		<title>Nacionalni park Fruška gora</title>
+		
+	</head>
+	<body>
+		<header>
+			<nav>
+				<div id="top" class="logo"></div>
+				
+				<ul class="nav-list">
+					<li><a href="pocetna.html">Pocetna</a></li>
+					<li><a href="oparku.html">O parku</a></li>
+					<li><a href="kontakt.html">Kontakt</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<h1>Kontakt</h1>
+			
+			<div class="contact">
+			
+				<div class="contact-us">
+				
+					<h3>Tu smo za sva vaša pitanja, sugestije, komentare, upozorenja, molbe</h3>
+					
+					<div id="contact-inner-div">
+					<form name="contact">
+					
+						<label for="name">Ime:</label>
+						<input type="text" id="name" name="name">
+						
+						<label for="prezime">Prezime:</label>
+						<input type="text" id="lastname" name="lastname">
+						
+						<label for="email">Unesite vašu e-mail adresu:</label>
+						<input type="email" id="email">
+						
+						<label for="comment-type" >Izaberite vrstu komentara koji šaljete:</label>
+						<select id="comment-type" name="commentType">
+							<option value="1">Pitanje</option>
+							<option value="2">Molba</option>
+							<option value="3">Sugestija</option>
+							<option value="4">Komentar</option>
+							<option value="5">Upozorenje</option>
+						</select>
+						
+						<label for="question">Unesite pitanje:</label>
+						<textarea id="question" name="question">
+						</textarea>
+						
+						<input type="button" id="send-question" value="Pošaljite pitanje">
+						<input type="button" id="see-questions" value="Pogledajte listu najčešćih pitanja">
+					</form>
+					</div>
+					
+				</div>
+				
+				<div class="member">
+				
+					<h3>Postanite član udruženja "Fruškogorac"</h3>
+					
+					<div id="member-inner-div">
+					
+						<form name="member">
+						
+							<label for="name">Ime:</label>
+							<input type="text" id="name" name="name">
+							
+							<label for="prezime">Prezime:</label>
+							<input type="text" id="lastname" name="lastname">
+							
+							<label for="email">Unesite vašu e-mail adresu:</label>
+							<input type="email" id="email">
+							
+							<label for="birth">Unesite datum rođenja:</label>
+							<input type="date" id="birth" name="birth" min="1900-01-01" max="2030-01-01">
+							
+							<p class="gender-title">Označite vaš pol:</p>
+							<input type="radio" id="female" name="gender" value="female" checked>
+							<label class="radio-label" for="female">Ženki</label>
+							<input type="radio" id="male" name="gender" value="male" checked>
+							<label class="radio-label" for="female">Muški</label>
+							
+							<div class="checkbox-wrapper">
+								<input type="checkbox" id="notification" name="notification" checked>
+								<label class="checkbox-label" for="notification">Prihvatam da primam obaveštenja od udruženja</label>
+							</div>
+							
+							
+							<label for="question">Poruka:</label>
+							<textarea id="question" name="question">
+							</textarea>
+							<input type="button" id="sendRequest" value="Pošalji zahtev za članstvo">
+							
+						</form>
+						
+					</div>
+					
+				</div>
+				
+			</div>
+		</main>
+		
+		<a class="linktop" href="#top">
+			<p>Vrati se na vrh</p>
+		</a>
+		
+		<footer>
+		
+			<div>
+				<p>
+					<span>© 2022</span>
+					<span> • Nacionalni park Fruška gora • </span>
+				</p>
+			</div>
+			
+		</footer>
+		<script src="funkcijeForme.js"></script>
+	</body>
+</html>
