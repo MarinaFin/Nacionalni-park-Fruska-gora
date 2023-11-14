@@ -1,4 +1,4 @@
-function writeParkPage(){
+function writeParkPage() {
 	var heading = ["Biljke", "Životinje", "Gljive", "Geografija i geologija", "Hidrologija i klima"];
 	
 	var description = ["Flora Flora Fruške gore je veoma raznolika i specifična. Na prostoru uže zone Nacionalnog parka raste oko 1000 vrsta biljaka, a njihov ukupan broj, zajedno sa biljkama na prostoru zaštitne zone, prelazi cifru od 1500 vrsta. Ovako velikom raznovrsnošću Fruška gora može da… ",
